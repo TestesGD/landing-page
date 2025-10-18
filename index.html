@@ -7,18 +7,39 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
 </head>
 <body>
   <header class="navbar">
-    <h1> A Influência Europeia na Cultura Brasileira</h1>
-    <nav>
-      <a href="#culinaria">Culinária</a>
-      <a href="#mapa">Mapa Cultural</a>
-      <a href="#musica">Música</a>
-      <a href="#historia">História</a>
-      <a href="#papas">Linha do Tempo dos Papas</a>
-    </nav>
-  </header>
+      <h1>A Influência Europeia na Cultura Brasileira</h1>
+
+      <!-- Checkbox invisível -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" title="Alternar menu" aria-label="Alternar menu">
+
+      <!-- Ícone do menu -->
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Menu lateral -->
+      <div class="side-menu">
+        <a href="mapa.html">Mapa Cultural</a>
+        <a href="musica.html">Música</a>
+        <a href="historia.html">História</a>
+        <a href="papas.html">História Católica</a>
+      </div>
+      <style>
+          :root {
+            --cor-prin: linear-gradient(to right,rgb(42, 220, 19), rgb(173, 205, 12),rgb(0,39,118));
+            --cor-segunda: linear-gradient(to right, rgb(42, 220, 19), rgb(173, 205, 12),rgb(0,39,118));
+            --cor-terceira:linear-gradient(to right, rgb(42, 220, 19), rgb(173, 205, 12),rgb(0,39,118));
+          }
+        </style>
+
+    </header>
+
 
   <section class="hero">
     <div class="hero-text">
@@ -49,7 +70,7 @@
         <p>Prato típico espanhol que se popularizou no Brasil, especialmente nas feiras e festas.</p>
       </div>
       <div class="card">
-        <img src="comidas/doce de leite.jpg" alt="Doce de Leite">
+        <img src="comidas/doce_de_leite.jpg" alt="Doce de Leite">
         <h3>Doce de Leite</h3>
         <p><strong>Origem:</strong> Espanha </p>
         <p>Preparado com leite e açúcar cozidos lentamente até obter uma consistência cremosa e caramelizada. Popular no Sul do Brasil, especialmente em sobremesas.</p>
@@ -70,201 +91,13 @@
     </div>
   </section>
 
-  <section id="mapa" class="section">
-    <h2>🗺️ Mapa Cultural</h2>
-    <p>Veja onde cada influência europeia se espalhou pelo Brasil.</p>
-    <img src="MapChart_Map.png" alt="Mapa do Brasil" class="mapa">
-   <ul class="mapa-legenda">
-    <li class="mapa-details">
-      <div class="bandeira-titulo">
-        <span class="fi fi-it"></span> Italianos 
-      </div>
-      <details>
-        <summary class="mapa-summary">
-          Clique para ver mais sobre como os italianos influenciaram a culinária brasileira e o estilo arquitetônico.
-        </summary>
-        <p>
-          A imigração italiana trouxe pratos típicos como massas, queijos e vinhos, além de influências marcantes na arquitetura colonial e nos costumes familiares.
-        </p>
-         <div class="card-container-obras">
-          <div class="card-obras">
-            <img src="italia/Palácio da Liberdade (Belo Horizonte).jpg" alt="Palácio da Liberdade">
-            <h3>Palácio da Liberdade </h3><br>
-            <p><strong>Origem:</strong> Belo Horizonte, Brasil</p>
-            <p>Um exemplo notável da influência italiana na arquitetura brasileira, o Palácio da Liberdade é um marco histórico de Belo Horizonte.</p>
-          </div>
 
-          <div class="card-obras">
-            <img src="italia/Teatro Municipal do Rio de Janeiro.jpg" alt="Teatro Municipal do Rio de Janeiro">
-            <h3>Teatro Municipal do Rio de Janeiro</h3>
-            <p><strong>Origem:</strong> Rio de Janeiro, Brasil</p>
-            <p>Um exemplo notável da influência italiana na arquitetura brasileira, o Teatro Municipal é um marco histórico do Rio de Janeiro.</p>
-          </div>
-         </div>
-      </details>
-    </li>
-
-    <li class="mapa-details">
-      <div class="bandeira-titulo">
-        <span class="fi fi-de"></span> Alemães
-      </div>
-      <details>
-        <summary class="mapa-summary">
-          Clique para ver mais sobre como os alemães influenciaram a culinária brasileira e o estilo arquitetônico.
-        </summary>
-        <p>
-          A imigração alemã trouxe pratos típicos como chucrute, salsichas e cervejas, além de influências na arquitetura de cidades como Blumenau e Pomerode.
-        </p>
-        <div class="card-container-obras">
-          <div class="card-obras">
-            <img src="imagens/obras arquitetônica/italia/Palácio da Liberdade (Belo Horizonte).jpg" alt="Palácio da Liberdade">
-            <h3>Palácio da Liberdade </h3><br>
-            <p><strong>Origem:</strong> Belo Horizonte, Brasil</p>
-            <p>Um exemplo notável da influência italiana na arquitetura brasileira, o Palácio da Liberdade é um marco histórico de Belo Horizonte.</p>
-          </div>
-
-          <div class="card-obras">
-            <img src="imagens/obras arquitetônica/italia/Teatro Municipal do Rio de Janeiro.jpg" alt="Teatro Municipal do Rio de Janeiro">
-            <h3>Teatro Municipal do Rio de Janeiro</h3>
-            <p><strong>Origem:</strong> Rio de Janeiro, Brasil</p>
-            <p>Um exemplo notável da influência italiana na arquitetura brasileira, o Teatro Municipal é um marco histórico do Rio de Janeiro.</p>
-          </div>
-         </div>
-      </details></li>
-
-    <li class="mapa-details">
-      <div class="bandeira-titulo">
-        <span class="fi fi-pt"></span> Portugueses
-      </div>
-      <details>
-        <summary class="mapa-summary">
-          Clique para ver mais sobre como os portugueses influenciaram a culinária brasileira e o estilo arquitetônico.
-        </summary>
-        <p>
-          A colonização portuguesa trouxe ingredientes como o bacalhau, além de influências na arquitetura colonial, visíveis em igrejas e casarões.
-        </p>
-      </details></li>
-    <li class="mapa-details">
-      <div class="bandeira-titulo">
-        <span class="fi fi-es"></span> Espanhóis
-      </div>
-      <details>
-        <summary class="mapa-summary">
-          Clique para ver mais sobre como os espanhóis influenciaram a culinária brasileira e o estilo arquitetônico.
-        </summary>
-        <p>
-          A imigração espanhola trouxe pratos como paella e tapas, além de influências na arquitetura de cidades como São Paulo e Rio de Janeiro.
-        </p>
-      </details></li>
-</ul>
-
-  </section>
   
-  <section id="musica" class="section">
-    <h2>🎶 Música </h2>
-    <p>A música brasileira é uma mistura rica de influências, incluindo ritmos e estilos trazidos por imigrantes europeus. Alguns exemplos incluem:</p>
-    <div class="card-container-musica">
-      <div class="card-musica">
-        <img src="Carinhoso imagens2.jpg" alt="Fado Português">
-        <h3>Carinhoso</h3>
-        <audio src="músicas/Carinhoso.unknown" controls></audio>
-        <p><strong>Origem:</strong> Portugal </p>
-        <p>Estilo musical melancólico que influenciou a música popular brasileira, especialmente em canções de amor e saudade.</p>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="historia" class="section historia">
-    <h2>📖 História da Influência Europeia</h2>
-    <p>
-      A presença europeia no Brasil começou com a chegada dos portugueses em 1500.  
-      Ao longo dos séculos XIX e XX, italianos, alemães, espanhóis e outros imigrantes vieram em busca de novas oportunidades.  
-      Eles trouxeram suas tradições, culinária, arquitetura e costumes, que hoje fazem parte da identidade cultural brasileira.
-    </p>
-    <p>
-      Essa mistura deu origem a uma cultura diversa, visível nas festas, nas palavras do nosso idioma e nas comidas típicas que consumimos até hoje.
-    </p>
-  </section>
-
-  <section id="papas" class="section timeline-section">
-    <h2>⛪ Linha do Tempo dos Papas</h2>
-    <p>O catolicismo europeu teve grande influência no Brasil, e os papas foram figuras centrais na história da Igreja Católica. Veja alguns dos mais importantes:</p>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-date">1500</div>
-        <div class="timeline-content">
-            <img src="papas/Papa Alexandre VI.jpg" alt="Papa Alexandre VI">
-          <h3>Papa Alexandre VI</h3>
-          <p>Pontífice durante o Tratado de Tordesilhas, que dividiu as terras do Novo Mundo entre Portugal e Espanha.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">1800</div>
-        <div class="timeline-content">
-          <img src="papas/Papa Pio VII.jpg" alt="Papa Pio VII">
-          <h3>Papa Pio VII</h3>
-          <p>Governou durante o período de independência do Brasil, quando o catolicismo era a religião oficial do Império.</p>
-        </div>
-      </div>
-
-       <div class="timeline-item">
-        <div class="timeline-date">2025</div>
-        <div class="timeline-content">
-            <img src="papas/Papa Leão XIII.jpg" alt="Papa Leão XIII">
-          <h3>Papa Leão XIII</h3>
-          <p>Conhecido por sua Doutrina Social, defendeu justiça social e os direitos dos trabalhadores.</p>
-        </div>
-      </div>
 
 
-      <div class="timeline-item">
-        <div class="timeline-date">1963</div>
-        <div class="timeline-content">
-            <img src="papas/Papa Paulo VI.jpg" alt="Papa Paulo VI">
-          <h3>Papa Paulo VI</h3>
-          <p>Primeiro papa a visitar países da América Latina, fortalecendo os laços com os fiéis brasileiros.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">1980</div>
-        <div class="timeline-content">
-            <img src="papas/Papa João Paulo II.jpg" alt="Papa João Paulo II">
-          <h3>Papa João Paulo II</h3>
-          <p>Visitou o Brasil várias vezes e é lembrado por sua mensagem de paz e união entre os povos.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2005</div>
-        <div class="timeline-content">
-            <img src="papas/Papa Bento XVI.jpg" alt="Papa Bento XVI">
-          <h3>Papa Bento XVI</h3>
-          <p>Renunciou em 2013, sendo um dos poucos papas da história a abdicar do cargo voluntariamente.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-date">2013</div>
-        <div class="timeline-content">
-            <img src="papas/Papa Francisco.jpg" alt="Papa Francisco">
-          <h3>Papa Francisco</h3>
-          <p>Primeiro papa latino-americano, vindo da Argentina, e que participou da Jornada Mundial da Juventude no Rio de Janeiro.</p>
-        </div>
-      </div>
-      <div class="timeline-item">
-        <div class="timeline-date">2025</div>
-        <div class="timeline-content">
-            <img src="papas/novo papa.jpg" alt="Papa Leão XIV">
-          <h3>Papa Leão XIV</h3>
-          <p>Papa previsto para 2025, sucessor de Papa Francisco. Seu pontificado está em início, e suas ações e impactos ainda estão sendo definidos, mas espera-se que siga liderando a Igreja Católica e promovendo seus ensinamentos e tradições.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
+ 
+  
+   
   <footer>
     <p> Influência Europeia na Cultura Brasileira © 2025</p><br>
     <p>Desenvolvido pela equipe do 3PI.</p>

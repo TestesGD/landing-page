@@ -88,7 +88,7 @@ body {
   height: 180px;
   object-fit: cover;
 }
-/*card das obras*/
+/*card das obras italia*/
 .card-container-obras {
   display: flex;
   flex-wrap: wrap;
@@ -111,6 +111,90 @@ body {
 }
 
 .card-obras img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+/*alemanha*/
+.card-container-obras1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card-obras1 {
+  background: rgb(238, 200, 11);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+
+.card-obras1:hover {
+  transform: scale(1.05);
+}
+
+.card-obras1 img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+/*portugal*/
+.card-container-obras2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card-obras2 {
+  background: linear-gradient(to right, rgb(6, 133, 25), rgb(255, 0, 0));
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+
+.card-obras2:hover {
+  transform: scale(1.05);
+}
+
+.card-obras2 img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+/*espanha*/
+.card-container-obras3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card-obras3 {
+  background: linear-gradient(to right, rgb(183, 163, 11), rgb(255, 0, 0));
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+
+.card-obras3:hover {
+  transform: scale(1.05);
+}
+
+.card-obras3 img {
   width: 100%;
   border-radius: 10px;
   height: 180px;
@@ -237,7 +321,7 @@ h4{
 
 /* Fundo centralizado quando o details é aberto */
 .mapa-details details[open] {
-  background-image: url('fundos/italia.jpg'), url('fundo  s/alemanha.jpg');
+  background-image: url('imagens/fundos/italia.jpg'), url('imagens/fundos/alemanha.jpg');
   background-size: cover, cover, cover, cover;
   background-position: center, left center, right center;
   background-blend-mode: overlay;
@@ -263,6 +347,17 @@ h4{
   margin-top: 10px;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 700px;
+  text-align: justify
+}
+
+.caixa p{
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  margin: 10px ;
   border-radius: 8px;
   max-width: 700px;
   text-align: center;
@@ -275,7 +370,39 @@ h4{
   line-height: 1.7;
   text-align: justify;
 }
+.historia li {
+  max-width: 800px;
+  margin: 0 auto 15px;
+  line-height: 1.7;
+  text-align: justify;
+}
+.historia table{
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
+}
+.historia th,td{
+  padding: 12x;
+  border: 1px solid #ddd;
+}
+.historia td{
+  text-align: center;
+  
+}
+.historia th{
+  background-color:green ;
+  color: white;
+  text-transform: uppercase;
+}
+.historia tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+.historia tr:hover{
+  background-color: #e0f3ff;
+}
 /* ====== Linha do Tempo ====== */
 .timeline-section {
   background: #eef2ff;
@@ -347,26 +474,207 @@ h4{
 .timeline-item:nth-child(even)::before {
   left: -9px;
 }
-
+.ti-igr p{
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+}
 @media (max-width: 700px) {
+  .historia table {
+  width: 100%;
+  min-width: 400px; /* Garante que o conteúdo não quebre */
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  } 
+  .timeline {
+    padding: 20px;
+  }
   .timeline::after {
-    left: 20px;
+    left: 0px;
+    
+    transform: none;
+
   }
 
   .timeline-item {
     width: 100%;
-    padding-left: 50px;
-    padding-right: 20px;
+    left: 0 !important;
+  
+    padding-left: 35px;
+    padding-right: 0px;
   }
 
   .timeline-item::before {
-    left: 12px;
+    left: -30px !important;
+    right: auto;
+    
   }
+}
+
+@media (max-width: 480px) {
+  /*card das obras italia*/
+  .historia table {
+  font-size: 0.9rem;
+
+  }
+  .historia th,td{
+    padding: 8px;
+    width: -60%;
+  }
+
+  .card-container-obras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .card-obras {
+    background: linear-gradient(rgb(8, 130, 24),rgb(231, 234, 231), rgb(255, 0, 0));
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+
+
+  .card-obras:hover {
+    transform: scale(1.05);
+  }
+
+  .card-obras img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+  }
+  /*alemanha*/
+  .card-container-obras1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .card-obras1 {
+    background:linear-gradient( rgb(238, 200, 11), rgb(255, 0, 0), rgb(10, 8, 8));
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+
+
+  .card-obras1:hover {
+    transform: scale(1.05);
+  }
+
+  .card-obras1 img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+  }
+  /*portugal*/
+  .card-container-obras2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .card-obras2 {
+    background: linear-gradient( rgb(6, 133, 25), rgb(255, 0, 0));
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+
+
+  .card-obras2:hover {
+    transform: scale(1.05);
+  }
+
+  .card-obras2 img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+  }
+  /*espanha*/
+  .card-container-obras3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .card-obras3 {
+    background: linear-gradient( rgb(183, 163, 11), rgb(255, 0, 0));
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 280px;
+    padding: 15px;
+    transition: transform 0.3s;
+  }
+
+
+  .card-obras3:hover {
+    transform: scale(1.05);
+  }
+
+  .card-obras3 img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+  }
+  .timeline {
+    padding: 20px;
+  }
+  .timeline::after {
+    left: 0px;
+    
+    transform: none;
+
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+  
+    padding-left: 35px;
+    padding-right: 0px;
+  }
+
+  .timeline-item::before {
+    left: -30px !important;
+    right: auto;
+    
+  }
+  footer {
+  background: linear-gradient(rgb(42, 220, 19), rgb(173, 205, 12));
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  }
+
+}
+.centro p{
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Rodapé */
 footer {
-  background: #1e3a8a;
+  background: linear-gradient(rgb(42, 220, 19), rgb(173, 205, 12));
   color: white;
   text-align: center;
   padding: 15px;
