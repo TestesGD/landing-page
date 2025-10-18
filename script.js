@@ -4,3 +4,5 @@
     function closeMenu() {
       document.getElementById("side-menu").style.width = "0";
     }
+
+    

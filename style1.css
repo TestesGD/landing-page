@@ -112,6 +112,14 @@ header {
 }
 
 @media (max-width: 480px) {
+  header {
+  background: var(--cor-prin) !important ;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   .logo h1 {
     position: absolute;
     left: 45%;
